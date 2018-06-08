@@ -2,11 +2,10 @@
 秒杀连连看
 
 ## 背景描述 ##
-在知乎上看到个大佬用PYTHON写了个连连看的外挂，然后参考他的解决方法，写了个C++版本的
-用 windows API实现，图像处理用 GDI
+在知乎上看到个大佬用PYTHON写了个连连看的外挂 https://github.com/TheThreeDog/Auto-Lianliankan
 
-这个是python版本的大佬
-https://github.com/TheThreeDog/Auto-Lianliankan
+然后参考他的解决方法，写了个C++版本的
+用 windows API实现，图像处理用 GDI
 
 ## 注意 ##
 本程序只用于技术交流，请勿大肆传播和用作商业用途
