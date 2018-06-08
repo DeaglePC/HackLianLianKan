@@ -14,3 +14,4 @@ https://github.com/TheThreeDog/Auto-Lianliankan
 只适用于QQ游戏的连连看，
 其他版本的的连连看要调整窗口和图片参数。。。
 
+![this is result](https://github.com/DeaglePC/HackLianLianKan/raw/master/picture/1.png)
