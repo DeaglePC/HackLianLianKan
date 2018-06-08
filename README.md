@@ -12,6 +12,8 @@ https://github.com/TheThreeDog/Auto-Lianliankan
 本程序只用于技术交流，请勿大肆传播和用作商业用途
 
 ## 使用方法 ##
+https://github.com/DeaglePC/HackLianLianKan/releases/download/1.0/HackLLK.exe
+下载exe，双击运行。
 输入每次消除的时间间隔就可以自动消掉所有的方块
 无解会自动使用道具继续来
 
