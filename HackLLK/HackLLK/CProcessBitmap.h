@@ -8,7 +8,7 @@ public:
 	CProcessBitmap();
 	~CProcessBitmap();
 
-	// get 之后的都需要delete
+	// get 涔嬪悗鐨勯兘闇�瑕乨elete
 	static HBITMAP GetWindowBitmap(HWND hWnd);
 	static HBITMAP GetCutBitmap(HWND hWnd,HBITMAP hSourceBmp, int x, int y, int width, int height);
 	static HBITMAP GetCopyBitmap(HWND hWnd, HBITMAP hSourceBmp);
