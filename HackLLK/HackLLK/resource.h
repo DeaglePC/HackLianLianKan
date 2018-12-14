@@ -2,8 +2,6 @@
 // Microsoft Visual C++ 生成的包含文件。
 // 供 HackLLK.rc 使用
 //
-#define IDB_BITMAP1                     101
-#define IDB_BITMAP_EMPTY                101
 
 // Next default values for new objects
 // 

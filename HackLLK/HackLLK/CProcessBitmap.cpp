@@ -128,3 +128,48 @@ bool CProcessBitmap::IsBitmapEqual(HWND hWnd, HBITMAP hBitmapSource, HBITMAP hBi
 	delete[] pDataDest;
 	return res;
 }
+
+bool CProcessBitmap::IsAllSameRGB(HWND hWnd, HBITMAP hBitmapSource)
+{
+	if (hWnd == NULL || hBitmapSource == NULL)
+	{
+		return false;
+	}
+	BITMAP bmp;
+	GetObject(hBitmapSource, sizeof(bmp), &bmp);
+
+	HDC hDc = ::GetDC(hWnd);
+	BITMAPINFO bmpInfo;
+	UINT* pDataSource;
+
+	bmpInfo.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
+	bmpInfo.bmiHeader.biWidth = bmp.bmWidth;
+	bmpInfo.bmiHeader.biHeight = -bmp.bmHeight;	// 倒过来
+	bmpInfo.bmiHeader.biPlanes = 1;
+	bmpInfo.bmiHeader.biCompression = BI_RGB;
+	bmpInfo.bmiHeader.biBitCount = 32;
+
+	pDataSource = new UINT[bmp.bmWidth * bmp.bmHeight];
+	GetDIBits(hDc, hBitmapSource, 0, bmp.bmHeight, pDataSource, &bmpInfo, DIB_RGB_COLORS);
+
+	// 判断是不是所有的颜色都一样
+	LONG len = bmp.bmWidth * bmp.bmHeight;
+	if (len	== 0)
+	{
+		return false;
+	}
+	UINT uFirst = pDataSource[0];
+	bool res = true;
+	for (int i = 1; i < len; ++i)
+	{
+		if (pDataSource[i] != uFirst)
+		{
+			res = false;
+			break;
+		}
+	}
+
+	delete[] pDataSource;
+	DeleteDC(hDc);
+	return res;
+}
