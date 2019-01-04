@@ -11,7 +11,7 @@
 本程序只用于技术交流，请勿大肆传播和用作商业用途
 
 ## 使用方法 ##
-https://github.com/DeaglePC/HackLianLianKan/releases/download/1.0/HackLLK.exe
+https://github.com/DeaglePC/HackLianLianKan/releases/download/1.1/HackLLK.exe
 下载exe，双击运行。
 游戏开始后，输入时间启动外挂，时间单位毫秒，表示两次消除方块之间的时间间隔，0（秒杀），1000左右模仿真人
 (游戏画面出来后再输入时间开始)
