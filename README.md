@@ -25,4 +25,4 @@
 本程序只用于技术交流，请勿大肆传播和用作商业用途
 
 ## 效果展示
-![this is result](https://github.com/DeaglePC/HackLianLianKan/raw/master/picture/1.png)
+![this is result](https://github.com/DeaglePC/HackLianLianKan/raw/master/picture/hackllk_zz.gif)
